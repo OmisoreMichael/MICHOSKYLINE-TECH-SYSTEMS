@@ -664,6 +664,8 @@ img{
 
 }
 
+}
+
 @media(width < 600px){
   .explore-header{
     flex-direction: column;
@@ -707,4 +709,25 @@ img{
   }
 
  
+  .header-content h1{
+    font-size: 50px;
+  }
+
+ 
+  .header-image::before{
+  content: "M";
+  color: var(--secondary-color);
+  position: absolute;
+  font-size: 450px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);    /* on the left axis move backwards by 50%  */
+  opacity: 0.1;
+  z-index: -1;
+  line-height: 320px;
+  font-weight: 400;
+}
+
+
+  
 }
